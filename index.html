@@ -10,15 +10,60 @@
 </head>
 <body>
 
-<nav class="container mx-auto bg-gray-100">
-    <div class="py-6 flex flex-row justify-around">
-        <div>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
+<nav class="bg-gray-100">
+    <div class="container mx-auto flex flex-row justify-around items-center">
+        <!--        Left Content-->
+        <div class="flex space-x-8 h-14">
+            <a href="#" class="text-gray-500 flex items-center gap-2 hover:text-teal-500 border-b-2
+            border-transparent hover:border-teal-500">
+                <svg class="h-4"
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                >
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Home
+            </a>
+            <a href="#" class="text-gray-500 flex items-center gap-2  border-b-2
+            border-transparent hover:border-teal-500">
+
+                <svg class="h-4"
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                >
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                Moment
+            </a>
+            <a href="#" class="text-gray-500 flex items-center gap-2  border-b-2
+            border-transparent hover:border-teal-500">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="h-4">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+                Notification
+            </a>
+            <a href="#" class="text-gray-500 flex items-center gap-2  border-b-2
+            border-transparent hover:border-teal-500">
+
+                <svg class="h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                >
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Messages
+            </a>
+
         </div>
+        <!--        Twitter icon -->
         <div>
-            <a href="#twitter" class="text-blue-500">
+            <a href="#twitter" class
+                    ="text-blue-500">
                 <svg
                         class="fill-current"
                         xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -28,10 +73,21 @@
                 </svg>
             </a>
         </div>
+        <!--         Right Conent -->
         <div class="flex justify-between gap-3">
-            <input type="text" class="focus:outline-none px-4 rounded-full h-9 bg-gray-200"
-                   placeholder="Search Tweet"
-            >
+            <div class="relative focus:outline-none  rounded-full h-9 bg-gray-200">
+                <label for="search_tweet" class="sr-only">Search Tweet</label>
+                <input type="text" placeholder="Search Tweet" id="search_tweet"
+                       class="h-full  w-full px-4 focus:outline-none rounded-full"/>
+
+                <svg class="absolute right-4 top-2.5  text-gray-400 h-4"
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
             <img src="imgs/profile.jpg" class="w-9 h-9 rounded-full" alt="">
             <button class="px-6 py-1 h-9  transition-all duration-300 bg-teal-500 text-white rounded-full hover:bg-teal-400">
                 Tweet
