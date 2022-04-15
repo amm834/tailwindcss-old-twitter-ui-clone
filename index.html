@@ -127,16 +127,115 @@
                 CSS
             </button>
         </div>
+
         <!--        Center -->
-        <div class="w-2/4 bg-white shadow">
+        <div class="w-2/4 bg-white shadow-lg">
             <!--            Menu Links-->
-            <div class="flex gap-x-8 py-4 px-2">
+            <div class="flex gap-x-8 py-4 px-2 bg-white shadow">
                 <h2 class="text-xl font-bold text-gray-900"> Tweets</h2>
                 <h2 class="text-xl font-bold text-teal-600"> Tweets & Replies</h2>
                 <h2 class="text-xl font-bold text-teal-600"> Media</h2>
             </div>
-            <!--            Divider -->
-            <hr class="divide-gray-900"/>
+
+            <!--            Tweets -->
+            <div>               <!--            Pinned Tweet  -->
+                <div class="bg-gray-100 p-4 border-b">
+                    <!--                Tweet noti header -->
+                    <div class="flex space-x-2 items-center ml-14">
+                        <span class="text-teal-500"><i data-feather="feather" class="h-4 fill-current"></i></span>
+                        <span class="text-gray-500">Pinned Tweet</span>
+                    </div>
+                    <!--                 Tweet -->
+                    <div class="flex flex-row mt-5 gap-x-4">
+                        <div class="h-16 w-16 bg-white rounded-full flex items-center justify-center">
+                            <img class="h-12" src="imgs/tailwindcss-icon.svg" alt="tailwind">
+                        </div>
+
+                        <div class="flex flex-col flex-1">
+                            <!--                        Card Heading -->
+                            <div class="flex gap-x-2">
+                                <h1 class="font-bold text-gray-900 text-lg hover:text-teal-500">Tailwind CSS</h1>
+                                <span class="text-gray-500 hover:text-teal-500">@tailwindcss</span>
+                                <span class="text-gray-500 hover:text-teal-500 hover:underline">15 December 2017</span>
+                            </div>
+                            <!--                         Content -->
+                            <div class="flex-1">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis cumque dolore
+                                dolorem, est id iure minima minus odit optio provident quaerat recusandae sapiente
+                                veritatis
+                                voluptatem? Animi doloremque error harum.
+                                <a href="#" class="text-teal-500">https://github.com</a>
+                                <img src="imgs/profile.jpg" alt="amm" class="mt-4 border-2 rounded-lg">
+                            </div>
+                            <!--                        Reactions-->
+                            <div class="flex gap-x-16 my-4">
+                                <div class="text-gray-500 font-bold flex items-center gap-x-3">
+                                    <i data-feather="message-circle"></i>
+                                    10
+                                </div>
+                                <div class="text-gray-500 font-bold flex items-center gap-x-3">
+                                    <i data-feather="repeat" class="h-5"></i>
+                                    10
+                                </div>
+                                <div class="text-gray-500 font-bold flex items-center gap-x-3">
+                                    <i data-feather="share-2" class="h-5"></i>
+                                    10
+                                </div>
+                                <div class="text-gray-500 font-bold flex items-center gap-x-3">
+                                    <i data-feather="mail" class="h-5"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--                 Normal Tweet -->
+                <div class="p-4 border-b">
+                    <!--                 Tweet -->
+                    <div class="flex flex-row mt-5 gap-x-4">
+                        <div class="h-16 w-16 shadow rounded-full flex items-center justify-center">
+                            <img class="h-12" src="imgs/tailwindcss-icon.svg" alt="tailwind">
+                        </div>
+
+                        <div class="flex flex-col flex-1">
+                            <!--                        Card Heading -->
+                            <div class="flex gap-x-2">
+                                <h1 class="font-bold text-gray-900 text-lg hover:text-teal-500">Tailwind CSS</h1>
+                                <span class="text-gray-500 hover:text-teal-500">@tailwindcss</span>
+                                <span class="text-gray-500 hover:text-teal-500 hover:underline">15 December 2017</span>
+                            </div>
+                            <!--                         Content -->
+                            <div class="flex-1">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis cumque dolore
+                                dolorem, est id iure minima minus odit optio provident quaerat recusandae sapiente
+                                veritatis
+                                voluptatem? Animi doloremque error harum.
+                                <a href="#" class="text-teal-500">https://github.com</a>
+                                <img src="imgs/profile.jpg" alt="amm" class="mt-4 border-2 rounded-lg">
+                            </div>
+                            <!--                        Reactions-->
+                            <div class="flex gap-x-16 my-4">
+                                <div class="text-gray-500 font-bold flex items-center gap-x-3">
+                                    <i data-feather="message-circle"></i>
+                                    10
+                                </div>
+                                <div class="text-gray-500 font-bold flex items-center gap-x-3">
+                                    <i data-feather="repeat" class="h-5"></i>
+                                    10
+                                </div>
+                                <div class="text-gray-500 font-bold flex items-center gap-x-3">
+                                    <i data-feather="share-2" class="h-5"></i>
+                                    10
+                                </div>
+                                <div class="text-gray-500 font-bold flex items-center gap-x-3">
+                                    <i data-feather="mail" class="h-5"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -169,7 +268,8 @@
                     <a href="#" class="text-gray-400 font-bold">
                         <i data-feather="x"></i>
                     </a>
-                </div> <div class="border-b py-4 flex gap-x-4 justify-between">
+                </div>
+                <div class="border-b py-4 flex gap-x-4 justify-between">
                     <div class="flex gap-x-2">
                         <div>
                             <img src="imgs/profile.jpg" alt="amm834" class="h-16 rounded-full">
@@ -188,7 +288,7 @@
                         <i data-feather="x"></i>
                     </a>
                 </div>
-<!--                Find people -->
+                <!--                Find people -->
                 <div class="flex items-center gap-x-2 border-b py-2">
                     <div>
                         <img class="w-12" src="imgs/tailwindcss-icon.svg" alt="tailwind">
