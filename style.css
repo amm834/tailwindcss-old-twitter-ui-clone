@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    @apply px-4 py-2 duration-100 transition-all
+}
+
+.btn-rounded {
+    @apply rounded-full
+}
+
+.btn-teal {
+    @apply bg-teal-500 text-white
+}
+
+.btn-teal:hover {
+    @apply bg-teal-400
+}
